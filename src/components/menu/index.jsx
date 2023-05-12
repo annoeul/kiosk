@@ -10,7 +10,7 @@ function Menu() {
   return (
     <MenuWrapper>
       {menus.map((menu, id) => (
-        <Product key={id} name={menu.name} img={menu.image} description={menu.description} price={menu.price} />
+        <Product key={id} name={menu.name} description={menu.description} price={menu.price} />
       ))}
     </MenuWrapper>
   )

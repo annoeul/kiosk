@@ -5,3 +5,7 @@
   text-align: center;
 }
  */
+.App {
+  max-width: 425px;
+  margin: auto;
+}

@@ -8,7 +8,7 @@ function Router() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<KioskMain />}>
-          <Route path="menu" element={<Menu />} />
+          {/* <Route path="menu" element={<Menu />} /> */}
         </Route>
       </Routes>
     </BrowserRouter>

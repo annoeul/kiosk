@@ -1,18 +1,24 @@
-import React, { useEffect, useState } from "react"
-import { Grid, Paper, Typography, ButtonBase, Container } from "@material-ui/core"
+import { Container } from "@material-ui/core"
 import * as S from "./style"
+
 import one from "../../data/one"
 
-function Product({ name, img, price, description }) {
+function Product({ name, price, description }) {
   return (
     <Container>
-      <S.ProductWrapper>
+      <S.ProductWrapper
+        onClick={() => {
+          alert("asd")
+        }}
+      >
         <S.ProductImg src="" />
+        <S.ProductName>
+          {name}
+          <br />
+          {price}
+        </S.ProductName>
+        <S.ProductImg src="/img/logo.png" size={30}></S.ProductImg>
       </S.ProductWrapper>
-      <S.ProductName>{name}</S.ProductName>
-      <p>{img}</p>
-      <p>{description}</p>
-      <p>{price}</p>
     </Container>
   )
 }
